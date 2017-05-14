@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <title>yoshikawakz</title>
 </head>
 
@@ -11,18 +12,31 @@
 </main>
 
 <menu>
-<ul>
- <li><a href="#selfIntroduction">自己紹介</a></li>
- <li><a href="#faborites">好きなこと</a></li>
- <li><a href="#weakpoints">苦手なこと</a></li>
- <li><a href="#resume">履歴書</a></li>
+<ul class="nav nav-pills">
+ <li class="active"><a href="#selfIntroduction" data-toggle="pill">自己紹介</a></li>
+ <li><a href="#faborites" data-toggle="pill">好きなこと</a></li>
+ <li><a href="#weakpoints" data-toggle="pill">苦手なこと</a></li>
+ <li><a href="#resume" data-toggle="pill">履歴書</a></li>
 </ul>
 </menu>
- <h2 id="selfIntroduction">自己紹介</h2>
-  <p>こんにちは。SI業界で働いています。東京在住です。</p>
- <h2 id="faborites">好きなこと</h2>
- <h2 id="weakpoints">苦手なこと</h2>
- <h2 id="resume">履歴書</h2>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="selfIntroduction">
+    <h2>自己紹介</h2>
+    <p>こんにちは。SI業界で働いています。東京在住です。</p>
+  </div>
+  <div class="tab-pane" id="faborites">
+     <h2>好きなこと</h2>
+  </div>
+  <div class="tab-pane" id="weakpoints">
+    <h2>苦手なこと</h2>
+  </div>
+  <div class="tab-pane" id="resume">
+    <h2>履歴書</h2>
+  </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 <footer>&copy; 2017 yoshikawakz</footer>
 </html>
